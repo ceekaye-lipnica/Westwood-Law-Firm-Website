@@ -183,6 +183,7 @@ padding: 1rem 1.5rem;
 .header{
     padding: 1rem 0;
     background-color: var(--mainBlue);
+    position: relative;
 }
 
 .header-wrapper{
@@ -219,6 +220,85 @@ padding: 1rem 1.5rem;
     font-size: 2.5rem;
 }
 
+.header-nav-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+
+}
+
+@media screen and (max-width: 500px){
+
+    .header-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .header-nav-socials{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5rem;
+
+        background: var(--mainBlue);
+        width: 100%;
+        position: absolute;
+        top: 15rem;
+        right: 0;
+        overflow: hidden;
+        max-height: 0;
+        transition: .5s ease;
+        z-index: 9;
+    }
+
+    .socials {
+        padding-bottom: 3rem;
+    }
+
+    .header-nav-socials.open{
+        max-height: 100rem;
+        transition: .5s ease;
+    }
+
+    .toggle__menu span{
+        width: 3rem;
+        height: .3rem;
+        display: block;
+        margin-top: .3rem;
+        border-radius: 5rem;
+        transition: .5s ease;
+        background-color: var(--light);
+    }
+    
+    .toggle__menu{
+        display: block;
+    }
+    
+    .toggle__menu.open span:first-child{
+        transform: translate(0, 5px) rotate(225deg);
+        transition: .5s ease;
+    }
+    
+    .toggle__menu.open span:nth-child(2){
+        opacity: 0;
+        transition: .5s ease;
+    }
+    
+    .toggle__menu.open span:last-child{
+        transform: translate(0, -7px) rotate(-225deg);
+        transition: .5s ease;
+    }
+    
+    .toggle__menu:hover{
+        cursor: pointer;
+    }
+
+}
+
+
+
 
 /* ===== BANNER SECTION ===== */
 .banner{
@@ -249,6 +329,25 @@ padding: 1rem 1.5rem;
     line-height: 1.2;
     margin-bottom: 3rem;
 }
+
+@media screen and (max-width: 500px){
+
+    .banner-wrapper{
+        position: absolute;
+        top: 10%;
+    }
+    
+    .banner-wrapper h2{
+        color: var(--light);
+        font-size: 4rem;
+        font-weight: 700;
+        width: 100%;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+    }
+
+}
+
 
 
 /* ===== WELCOME SECTION ===== */
@@ -296,6 +395,44 @@ padding: 1rem 1.5rem;
     font-size: 1.5rem;
     margin-top: 1rem;
 }
+
+
+@media screen and (max-width: 500px){
+
+    .welcome-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .welcome-img{
+        position: absolute;
+        right: 15%;
+        bottom: 28rem;
+    }
+    
+    .welcome-img img{
+        width: 30rem;
+    }
+    
+    .welcome-text h3{
+        text-align: center;
+    }
+    
+    .welcome-text-1{
+        width: 100%;
+    }
+
+    .welcome-text-1 h4{
+        text-align: center;
+    }
+
+    .welcome-text-1 p{
+        text-align: justify;
+    }
+
+}
+
 
 
 /* ===== FIRM SECTION ===== */
@@ -361,6 +498,70 @@ padding: 1rem 1.5rem;
     font-size: 1.6rem;
     text-align: center;
 }
+
+
+@media screen and (max-width: 500px){
+    .firm-bg{
+        background-color: rgba(1, 47, 98, 0.9);
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        height: 85vh;
+    }
+
+    .firm-title h3{
+        text-align: center;
+    }
+
+    .firm-title p{
+        text-align: justify;
+        width: 100%;
+    }
+    
+    .firm-wrapper{
+        display: flex;
+        flex-direction: column;
+        bottom: 5rem;
+    }
+
+    .firm-cards{
+        background-color: var(--light);
+        padding: 2rem;
+        width: 40rem;
+        height: 20rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ===== PARTNER SECTION ===== */
