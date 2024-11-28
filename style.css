@@ -531,35 +531,7 @@ padding: 1rem 1.5rem;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -615,6 +587,40 @@ padding: 1rem 1.5rem;
 .partner-brands-img img{
     width: 30rem;
 }
+
+@media screen and (max-width: 500px){
+
+    .partner-title h3{
+        font-size: 5rem;
+    }
+    
+    .partner-title p{
+        color: var(--dark);
+        font-size: 1.6rem;
+        text-align: justify;
+    }
+    
+    .partner-client{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 8rem 0;
+    }
+
+    .partner-client p{
+        font-size: 1.5rem;
+        width: fit-content;
+        line-height: 1.4;
+    }
+
+    .partner-brands-img img{
+        width: 100%
+    }
+
+
+}
+
 
 
 /* =====    CONTACT SECTION ===== */
@@ -678,6 +684,24 @@ padding: 1rem 1.5rem;
 }
 
 
+@media screen and (max-width: 500px) {
+
+    .contact-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .contact-title p{
+        width: 100%;
+    }
+    
+
+}
+
+
+
+
 /* =====  DIRECTOR SECTION ===== */
 .director{
     padding: 5rem 0;
@@ -735,6 +759,27 @@ padding: 1rem 1.5rem;
     font-size: 1.3rem;
 }
 
+@media screen and (max-width: 500px){
+    .director-title{
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+    
+    .director-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+
+    .director-card{
+        width: 100%;
+    }
+
+}
+
+
 
 /* =====  LINKS SECTION ===== */
 .links{
@@ -774,11 +819,32 @@ padding: 1rem 1.5rem;
     font-size: 1.8rem;
 }
 
+.links-nav li a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 500px) {
+    
+    .links-nav{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2rem;
+        
+    }
+    
+    .links-nav li a{
+        font-size: 2rem;
+    }
+
+}
+
 
 /* =====  FOOTER SECTION ===== */
 .footer{
     background-color: var(--darkBlue);
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .footer-wrapper{
@@ -791,5 +857,15 @@ padding: 1rem 1.5rem;
     color: var(--light);
     font-style: italic;
     font-size: 1.5rem;
+}
+
+
+@media screen and (max-width: 500px){
+
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 
 }
